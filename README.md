@@ -101,3 +101,7 @@ Mock execution checks cover file creation, approval-gated overwrite, resumption 
 - [ ] Full connector marketplace, OAuth and calendar/cron scheduling.
 
 DeepSeek API reference: https://api-docs.deepseek.com/
+
+## v2 — Plan first, no intake questionnaire
+
+Use **Generate plan** to create and save a complete Markdown plan from a single goal. **Run coworker** automatically detects planning requests and otherwise generates a working plan before acting. The plan specifies objectives, assumptions, actionable steps, owners, timing, deliverables, success metrics, risks/resources, and the immediate next action. Invalid plan responses are retried up to three attempts, with larger output limits when needed. Routine questions are suppressed; sensitive external writes and destructive actions still require approval. For a legacy task, open it and select **Generate plan from existing answers** to create a new plan task that preserves the original task and reuses its previous answers. No new questions are necessary. If the model repeatedly ignores execution instructions, the task stops with an error and retains its plan. The plan schema checks structure, not factual accuracy; live model output and external integration results still require review.
